@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>Biodata</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+      <script src="js/angularjs.min.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+
+  </head>
+  <body class="bg" style="background:#3f51b5" ng-controller="qrCtrl">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" style="background: white;height: 50px">
+      <h3 style="text-align: center">MASTERPASS</h3>  
+      </div>
+    </div>
+
+       
+    <div style="width: 350px;height: 200px;margin: 0 auto;">
+      <img src="img/masterpass.png" style="height: 150px;width:350px;margin-top: 30px">
+    </div>
+
+
+    <h4 style="text-align: center;color: white">Simply Scan to PAY</h4>
+
+
+     <div style="width: 350px;height: 300px;margin: 0 auto;">
+      <img src="img/live_qr.PNG" style="height: 300px;width:350px;margin-top: 30px">
+    </div>
+    <br>
+    <br>
+
+    <p style="color: white;text-align: center;">Merchant ID: {{random}} </p>
+    <p style="color: white;text-align: center;">Business Name: {{merchant}}</p>
+
+   <br>
+
+<br>
+
+  <div class="row">
+       <div class="col-md-offset-3 col-md-9">
+ <a type="submit" href="email.html" style="background: #ea001b;color: white;width: 300px;margin-left: 11pc;margin-top: 5px" class="btn green" >Send Email</a>
+
+
+   </div>
+    </div>
+
+    <br>
+      <div class="row">
+       <div class="col-md-offset-3 col-md-9">
+ <a type="submit" href="register.html" style="background: #ea001b;color: white;width: 300px;margin-left: 11pc;margin-top: 5px" class="btn green" >Home</a>
+       </div>
+      </div>
+
+  </div>
+
+
+ <br>
+
+
+   
+
+      
+ </body>    
+</html>

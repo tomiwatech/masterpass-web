@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <title>Biodata</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/angularjs.min.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+
+  </head>
+  <body class="bg" style="background:#3f51b5" ng-controller="emailCtrl">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" style="background: white;height: 50px">
+      <h3 style="text-align: center">MASTERPASS</h3>  
+      </div>
+    </div>
+<br>
+    <h3 style="text-align: center;color: white">SEND MAILS TO MERCHANT</h3>
+
+<br>
+<br>
+       
+       <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+         <div class="form-group">
+            <label class="col-md-3 control-label" style="color: white;">Enter your email</label>
+                  <div class="col-md-7">
+                <div class="input-inline input-medium">
+                    <div class="input-group">
+                    <span class="input-group-addon">
+                     <i class="fa fa-user"></i>
+                        </span>
+          <input type="text" ng-model="settings.merchant" class="form-control" placeholder="Enter your email" //> </div>
+                  </div>                      
+                </div>
+         </div>
+             </div>
+       </div>
+
+       <br>
+       <br>
+
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+         <div class="form-group">
+            <label class="col-md-3 control-label" style="color: white;">Enter CC</label>
+                  <div class="col-md-7">
+                <div class="input-inline input-medium">
+                    <div class="input-group">
+                    <span class="input-group-addon">
+                     <i class="fa fa-user"></i>
+                        </span>
+          <input type="text"  class="form-control" placeholder="Enter carbon copy" //> </div>
+                  </div>                      
+                </div>
+         </div>
+             </div>
+       </div>
+
+       <br>
+       <br>
+
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+         <div class="form-group">
+            <label class="col-md-3 control-label" style="color: white;">Enter BCC</label>
+                  <div class="col-md-7">
+                <div class="input-inline input-medium">
+                    <div class="input-group">
+                    <span class="input-group-addon">
+                     <i class="fa fa-user"></i>
+                        </span>
+          <input type="text" class="form-control" placeholder="Enter Blind carbon copy" //> </div>
+                  </div>                      
+                </div>
+         </div>
+             </div>
+       </div>
+
+       <br>
+       <br>
+
+
+           <div class="row">
+       <div class="col-md-offset-3 col-md-9">
+ <button type="submit" ng-click="sendmail(settings)" style="background: #ea001b;color: white;width: 350px;margin-left: 11pc;margin-top: 5px" class="btn green" >Send Mail</button>
+        </div>
+          </div>
+
+          <br>
+      <div class="row">
+       <div class="col-md-offset-3 col-md-9">
+ <a type="submit" href="register.html" style="background: #ea001b;color: white;width: 350px;margin-left: 11pc;margin-top: 5px" class="btn green" >Home</a>
+       </div>
+      </div>
+
+  </div>
+
+
+ <br>
+
+
+   
+
+      
+ </body>    
+</html>
