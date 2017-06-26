@@ -2,7 +2,7 @@ var app = angular.module('myApp', ['ngStorage']);
 
 
 app.run(function($rootScope) {
- 
+
    $rootScope.settings=""
 });
 
@@ -31,7 +31,7 @@ var transDate = (now.getDay() + 1) + "|" + (now.getMonth() + 1) + "|" + now.getF
       	location.href = 'qrcode.html';
         // $state.go('register')
       }
-	
+
 });
 
 
@@ -43,7 +43,7 @@ app.controller('qrCtrl',function($scope,$localStorage, $window){
 
      }
 
-     $scope.random = getRandom(8);   
+     $scope.random = getRandom(8);
 
   $scope.merchant = $window.localStorage.getItem("merchant");
 
@@ -79,6 +79,3 @@ app.controller('emailCtrl',function($scope){
 //     // Other methods or objects can go here
 //   };
 // });
-
-
-
